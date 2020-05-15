@@ -114,3 +114,7 @@ p {
 .post-container:nth-child(even) {
   background-color: #f7f7f7;
 }
+
+.post:not(:hover) {
+  filter: opacity(50%)
+}
