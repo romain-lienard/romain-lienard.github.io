@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="news.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hi no Ishi Dojo</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-title">
+        <h1>Hi No Ishi Dojo</h1><br>
+        <h2>Karaté Kyokushin à Mons</h2>
+      </div>
+      <!-- .header-title -->
+    </div>
+    <!-- .header -->
+    <div id="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="news.html">Nouvelles</a>
+      <div class="subnav">
+        <button class="subnavbtn">Informations <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="sensei.html">Enseignant</a>
+          <a href="classes.html">Cours</a>
+          <a href="medias.html">Médias</a>
+          <a href="palmares.html">Palmarès</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- #navbar -->
+
+    <script>
+          // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+      }
+    </script>
+
+      <div class="content">
+        <div class="post-container">
+          <div class="post">
+            <div class="post-author">
+              <img src="img/harold-news.jpg">
+              <span>Harold Bongonda</span>
+            </div> <!-- post-author -->
+              <p class="post-date">18 Mai 2020</p>
+              <h3 class="post-title">Réouverture du Dojo</h3>
+              <div class="post-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae vehicula magna. Integer ornare massa eget dolor congue porta ut at nibh. Fusce id aliquam urna. Nunc sed ligula blandit, sollicitudin neque non, tempor augue. Nunc at leo pellentesque, suscipit lectus ut, laoreet justo. Donec tincidunt turpis sit amet turpis fermentum fermentum. Pellentesque dignissim lacus eros, vel ultricies enim porttitor sit amet. Suspendisse eu tempor lectus. Integer at maximus odio. Praesent consectetur vulputate elit. Mauris vestibulum vestibulum consequat. Aenean dignissim velit eu magna luctus sagittis. Nullam tincidunt lacus enim, eu pulvinar mauris volutpat et. Nulla efficitur vitae augue et mattis. Curabitur quis urna vel arcu volutpat sodales.</p>
+              </div> <!-- post-content -->
+          </div> <!-- post -->
+        </div> <!-- post-container -->
+      </div>
+      <!-- .content -->
+      <div class="footer">
+        <div class="column">
+          <h4>Réseaux sociaux:</h4>
+            <p><i class="fa fa-facebook-f"></i>   <a href="https://www.facebook.com/kyokushinmons/">Facebook</a></p>
+            <p><i class="fa fa-instagram"></i>   <a href="https://www.instagram.com/fitfight_bongonda/">Instagram</a></p>
+        </div> <!-- column -->
+        <div class="column">
+          <h4>Nous contacter:</h4>
+          <p><i class="fa fa-home"></i>   2, Boulevard Albert-Elisabeth (Campus HEH)<br> 7000 Mons, Belgique</p>
+          <p><i class="fa fa-phone"></i>   0498 / 59 39 59</p>
+          <p><i class="fa fa-at"></i>   <a href=mailto:harold.bongonda@karate-mons.be>harold.bongonda@karate-mons.be</a></p>
+        </div> <!-- column -->
+      </div>
+      <!-- .footer -->
+  </body>
+</html>

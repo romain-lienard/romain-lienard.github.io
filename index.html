@@ -1,74 +1,103 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Le blog qui arrache des mères</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hi no Hishi Dojo</title>
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-        <a id="header-title" href="index.html">My blog</a>
-        <ul id="header-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href=mailto:lienard.romain@hotmail.com>Contact</a></li>
-        </ul>
-      </div> <!-- container -->
-    </div> <!-- header -->
-    <div id="content">
-      <div class="post-container">
-        <div class="post">
-          <div class="post-author">
-            <img src="img\romain.jpg">
-            <span>Chibi</span>
-          </div> <!-- post-author -->
-            <p class="post-date">May, 15th, 2020</p>
-            <h3 class="post-title">Seiko</h3>
-            <div class="post-content">
-              <p><strong>Seiko Holdings Corporation</strong>, commonly known as Seiko, is a Japanese holding company that has subsidiaries which manufactures and sells watches, clocks, electronic devices, semiconductors, jewelries, and optical products.</p>
-            </div> <!-- post-content -->
-        </div> <!-- post -->
-      </div> <!-- post-container -->
-      <div class="post-container">
-        <div class="post">
-          <div class="post-author">
-            <img src="img\emilie.jpg">
-            <span>Emilie</span>
-          </div> <!-- post-author -->
-            <p class="post-date">May, 15th, 2020</p>
-            <h3 class="post-title">NYX Professional Makeup</h3>
-            <div class="post-content">
-              <p><strong>NYX Professional Makeup</strong>, anciennement NYX Cosmetics, est une marque américaine de produits cosmétiques créée en 1999 à Los Angeles par Toni Ko, et propriété du groupe L'Oréal depuis 2014.</p>
-            </div> <!-- post-content -->
-        </div> <!-- post -->
-      </div> <!-- post-container -->
-      <div class="post-container">
-        <div class="post">
-          <div class="post-author">
-            <img src="img\romain.jpg">
-            <span>Chibi</span>
-          </div> <!-- post-author -->
-            <p class="post-date">May, 15th, 2020</p>
-            <h3 class="post-title">Silkroad Online</h3>
-            <div class="post-content">
-              <p><strong>Silkroad Online</strong> is a fantasy MMORPG set in the 7th century AD, along the Silk Road between China and Europe.</p>
-              <p>The game requires no periodic subscription fee, but players can purchase premium items to customize or accelerate gameplay.</p>
-            </div> <!-- post-content -->
-        </div> <!-- post -->
-      </div> <!-- post-container -->
-    </div> <!-- content -->
-    <div id="footer">
-      <div class="container">
-        <div class="column" style="padding-right: 300px;">
-          <h4>My Links</h4>
-          <p>
-            <a href="https://www.linkedin.com/in/romain-lienard/">LinkedIn</a><br>
-            <a href="https://www.facebook.com/lienard.romain">Facebook</a>
-          </p>
-        </div> <!-- column -->
-        <div class="column">
-          <h4>About me</h4>
-          <p>Ph.D Student</p>
-        </div> <!-- column -->
-    </div> <!-- container -->
+    <div class="header">
+      <div class="header-title">
+        <h1>Hi No Ishi Dojo</h1><br>
+        <h2>Karaté Kyokushin à Mons</h2>
+      </div>
+      <!-- .header-title -->
+    </div>
+    <!-- .header -->
+    <div id="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="news.html">Nouvelles</a>
+      <div class="subnav">
+        <button class="subnavbtn">Informations <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+          <a href="sensei.html">Enseignant</a>
+          <a href="classes.html">Cours</a>
+          <a href="medias.html">Médias</a>
+          <a href="palmares.html">Palmarès</a>
+        </div>
+      </div>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- #navbar -->
+
+    <script>
+          // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+
+      // Get the navbar
+      var navbar = document.getElementById("navbar");
+
+      // Get the offset position of the navbar
+      var sticky = navbar.offsetTop;
+
+      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+      }
+    </script>
+
+      <div class="content">
+        <div id="what">
+          <h1>Qu'est ce que le karaté Kyokushin ?</h1>
+          <p>Le kyokushin est un karaté full contact, qui met l’accent sur l’efficacité en combat réel. Généralement, ce style de karaté n’autorise pas les protections lors de combats en compétition. Les coups peuvent être portés à pleine puissance. Il n’est, en revanche, pas permis de porter des coups de poing à la tête de l’adversaire, uniquement les jambes et genoux, ce qui donne lieu à des combats au corps à corps très intenses.
+            <br>Le kyokushin est le style de karaté considéré comme le plus efficace et le plus dur de tous, car les pratiquants sont poussés à aller toujours plus loin, tant sur le plan physique que mental.</p>
+            <figure style="float: right; text-align: center;">
+              <p><img src="img/oyama.jpg" width="136" height="200">
+              <figcaption>Mas Oyama, <br>créateur du style Kyokushin</figcaption>
+            </figure>
+        </div>
+      <!-- #what -->
+        <br>
+        <div id="when">
+          <h1>Origines du Kyokushinkaï</h1>
+          <p>Le symbole du Kyokushinkai est le Kanku, dont les origines proviennent du kata Kanku. Kanku se traduit par « contempler le ciel ».
+            Le style Kyokushinkai fut fondé par Sosai Masutatsu Oyama, 10e Dan. Ce grand maître, peu satisfait des règles de karaté conventionnel, créa ses propres règles de compétition selon lesquelles les combats peuvent aller jusqu’au K.O.
+            Le premier dojo au style Kyokushinkai fut créé à Tokyo, en 1953. Il faudra attendre 1964 pour que le style s’exporte outre-mer.</p>
+        </div>
+        <!-- #when -->
+        <br>
+        <div id="dojo">
+          <h1>L'histoire du Dojo</h1>
+          <p>Le Dojo a été fondé en 2017 par Sensei Harold Bongonda, alors 1ère Dan en karaté Kyokushin.
+            Hi no Ishi (火の意志) signifie "la volonté du feu", nom représentatif de l'état d'esprit des pratiquants de Kyokushin, mais aussi de la principale valeur que Sensei Harold
+            souhaite insuffler à ses élèves: ne jamais abandonner. A l'origine, le Dojo fût fondé en lien étroit avec l'Université de Mons et était réservé aux étudiants, mais il s'en est dépuis progressivement émancipé et est maintenant ouvert à tous.</p>
+        </div>
+        <!-- #dojo -->
+            <div class="ytplayer">
+              <iframe class="resp-ytplayer" src="http://www.youtube.com/embed/xnEO8N8-DeA?autoplay=1"  frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+            <!-- ytplayer -->
+      </div>
+      <!-- .content -->
+    <div class="footer">
+      <div class="column">
+        <h4>Réseaux sociaux:</h4>
+          <p><i class="fa fa-facebook-f"></i>   <a href="https://www.facebook.com/kyokushinmons/">Facebook</a></p>
+          <p><i class="fa fa-instagram"></i>   <a href="https://www.instagram.com/fitfight_bongonda/">Instagram</a></p>
+      </div> <!-- column -->
+      <div class="column">
+        <h4>Nous contacter:</h4>
+        <p><i class="fa fa-home"></i>   2, Boulevard Albert-Elisabeth (Campus HEH)<br> 7000 Mons, Belgique</p>
+        <p><i class="fa fa-phone"></i>   0498 / 59 39 59</p>
+        <p><i class="fa fa-at"></i>   <a href=mailto:harold.bongonda@karate-mons.be>harold.bongonda@karate-mons.be</a></p>
+      </div> <!-- column -->
+    </div>
+    <!-- .footer -->
   </body>
 </html>
