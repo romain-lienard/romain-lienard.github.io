@@ -62,6 +62,7 @@ body {
 .content p {
   line-height: 1.4em;
   font-family: "Helvetica";
+  text-align: justify;
 }
 
 .footer {

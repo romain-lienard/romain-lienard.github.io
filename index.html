@@ -33,34 +33,14 @@
     </div>
     <!-- #navbar -->
 
-    <script>
-          // When the user scrolls the page, execute myFunction
-      window.onscroll = function() {myFunction()};
-
-      // Get the navbar
-      var navbar = document.getElementById("navbar");
-
-      // Get the offset position of the navbar
-      var sticky = navbar.offsetTop;
-
-      // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-      function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-      }
-    </script>
-
       <div class="content">
-        <img src="img/kanji.png" style="float: left; width: 10%; padding: 10px 20px 0 0;">
         <div id="what">
+          <img src="img/home/kanji.png" style="float: left; height: 160px; width: auto; padding: 10px 30px 10px 0;">
           <h1>Qu'est ce que le karaté Kyokushin ?</h1>
           <p>Le kyokushin est un karaté full contact, qui met l’accent sur l’efficacité en combat réel. Généralement, ce style de karaté n’autorise pas les protections lors de combats en compétition. Les coups peuvent être portés à pleine puissance. Il n’est, en revanche, pas permis de porter des coups de poing à la tête de l’adversaire, uniquement les jambes et genoux, ce qui donne lieu à des combats au corps à corps très intenses.
             <br>Le kyokushin est le style de karaté considéré comme le plus efficace et le plus dur de tous, car les pratiquants sont poussés à aller toujours plus loin, tant sur le plan physique que mental.</p>
             <figure style="float: right; text-align: center;">
-              <p><img src="img/oyama.jpg" width="136" height="200">
+              <p><img src="img/home/oyama.jpg" width="136" height="200">
               <figcaption>Mas Oyama, <br>créateur du style Kyokushin</figcaption>
             </figure>
         </div>
@@ -76,7 +56,7 @@
         <br>
         <div id="dojo">
           <h1>L'histoire du Dojo</h1>
-          <p>Le Dojo a été fondé en 2017 par Sensei Harold Bongonda, alors 1ère Dan en karaté Kyokushin.
+          <p>Le Dojo a été fondé en 2017 par Sensei Harold Bongonda, alors 1ère Dan en karaté Kyokushin, après s'être rendu compte de l'absence de Dojos représentant la discipline en région montoise.
             Hi no Ishi (火の意志) signifie "la volonté du feu", nom représentatif de l'état d'esprit des pratiquants de Kyokushin, mais aussi de la principale valeur que Sensei Harold
             souhaite insuffler à ses élèves: ne jamais abandonner. A l'origine, le Dojo fût fondé en lien étroit avec l'Université de Mons et était réservé aux étudiants, mais il s'en est dépuis progressivement émancipé et est maintenant ouvert à tous.</p>
         </div>
@@ -97,9 +77,10 @@
         <h4>Nous contacter:</h4>
         <p><i class="fa fa-home"></i>   2, Boulevard Albert-Elisabeth (Campus HEH)<br> 7000 Mons, Belgique</p>
         <p><i class="fa fa-phone"></i>   0498 / 59 39 59</p>
-        <p><i class="fa fa-at"></i>   <a href=mailto:harold.bongonda@karate-mons.be>harold.bongonda@karate-mons.be</a></p>
+        <p><i class="fa fa-at"></i>   <a href=mailto:contact@kyokushin-mons.be>contact@kyokushin-mons.be</a></p>
       </div> <!-- column -->
     </div>
     <!-- .footer -->
+    <script src="./js/navbar.js"></script>
   </body>
 </html>
