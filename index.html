@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/includeHTML.js"></script>
     <title>Hi no Ishi Dojo</title>
   </head>
   <body>
@@ -40,7 +41,7 @@
           <p>Le kyokushin est un karaté full contact, qui met l’accent sur l’efficacité en combat réel. Généralement, ce style de karaté n’autorise pas les protections lors de combats en compétition. Les coups peuvent être portés à pleine puissance. Il n’est, en revanche, pas permis de porter des coups de poing à la tête de l’adversaire, uniquement les jambes et genoux, ce qui donne lieu à des combats au corps à corps très intenses.
             <br>Le kyokushin est le style de karaté considéré comme le plus efficace et le plus dur de tous, car les pratiquants sont poussés à aller toujours plus loin, tant sur le plan physique que mental.</p>
             <figure style="float: right; text-align: center;">
-              <p><img src="img/home/oyama.jpg" width="136" height="200">
+              <p><img src="img/home/oyama.jpg" width="136" height="200" style="padding-left: 20px;">
               <figcaption>Mas Oyama, <br>créateur du style Kyokushin</figcaption>
             </figure>
         </div>
@@ -62,25 +63,19 @@
         </div>
         <!-- #dojo -->
             <div class="ytplayer">
-              <iframe class="resp-ytplayer" src="https://www.youtube.com/embed/xnEO8N8-DeA" frameborder="0" allow="accelerometer; autoplay=0; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="resp-ytplayer" src="https://www.youtube.com/embed/xnEO8N8-DeA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <!-- ytplayer -->
       </div>
       <!-- .content -->
     <div class="footer">
-      <div class="column">
-        <h4>Réseaux sociaux:</h4>
-          <p><i class="fa fa-facebook-f"></i>   <a href="https://www.facebook.com/kyokushinmons/">Facebook</a></p>
-          <p><i class="fa fa-instagram"></i>   <a href="https://www.instagram.com/fitfight_bongonda/">Instagram</a></p>
-      </div> <!-- column -->
-      <div class="column">
-        <h4>Nous contacter:</h4>
-        <p><i class="fa fa-home"></i>   2, Boulevard Albert-Elisabeth (Campus HEH)<br> 7000 Mons, Belgique</p>
-        <p><i class="fa fa-phone"></i>   0498 / 59 39 59</p>
-        <p><i class="fa fa-at"></i>   <a href=mailto:contact@kyokushin-mons.be>contact@kyokushin-mons.be</a></p>
-      </div> <!-- column -->
+      <div w3-include-html="./footer.html"></div>
     </div>
     <!-- .footer -->
     <script src="./js/navbar.js"></script>
+    <script src="./js/konami.js"></script>
+    <script>
+      includeHTML();
+    </script>
   </body>
 </html>

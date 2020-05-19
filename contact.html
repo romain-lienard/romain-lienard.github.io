@@ -40,14 +40,14 @@
           <form action="contact.php" method="POST">
             <label for="name">Nom</label>
             <input type="text" id="name" name="visitor_name" placeholder="Nom et prénom" pattern=[A-Z\sa-z]{3,30} required>
-            <label for="email">Adresse mail</label>
+            <label for="mail">Adresse mail</label>
             <input type="text" id="mail" name="visitor_email" placeholder="Adresse mail" required>
-            <label for="email">Numéro de téléphone (facultatif)</label>
+            <label for="phone">Numéro de téléphone (facultatif)</label>
             <input type="text" id="phone" name="visitor_phone" placeholder="Numéro de téléphone">
-            <label for="email">Sujet</label>
-            <input type="text" id="phone" name="email_title" placeholder="Raison de votre message" required>
-            <label for="subject">Message</label>
-            <textarea id="subject" name="visitor_message" placeholder="Quel est votre message ?" style="height:200px" required></textarea>
+            <label for="topic">Sujet</label>
+            <input type="text" id="topic" name="email_title" placeholder="Raison de votre message" required>
+            <label for="message">Message (<span id="charLeft">1500</span> caractères restants)</label>
+            <textarea id="message" name="visitor_message" placeholder="Quel est votre message ?" maxlength="1500" style="height:200px" required></textarea>
             <button type="submit">Envoyer</button>
           </form>
         </div>
@@ -70,12 +70,13 @@
         </div> <!-- column -->
         <div class="column">
           <h4>Nous contacter:</h4>
-          <p><i class="fa fa-home"></i>   2, Boulevard Albert-Elisabeth (Campus HEH)<br> 7000 Mons, Belgique</p>
+        <p><i class="fa fa-home"></i>   <a href="https://www.google.com/maps?ll=50.448184,3.953618&z=15&t=m&hl=fr&gl=BE&mapclient=embed&q=Boulevard+Albert-Elisabeth+2+7000+Mons">2, Boulevard Albert-Elisabeth (Campus HEH)<br> 7000 Mons, Belgique</a></p>
           <p><i class="fa fa-phone"></i>   0498 / 59 39 59</p>
           <p><i class="fa fa-at"></i>   <a href=mailto:contact@kyokushin-mons.be>contact@kyokushin-mons.be</a></p>
         </div> <!-- column -->
       </div>
       <!-- .footer -->
     <script src="./js/navbar.js"></script>
+    <script src="./js/charCounter.js"></script>
   </body>
 </html>
